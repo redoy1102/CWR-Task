@@ -15,13 +15,21 @@ export default function Dashboard() {
         <AppLayout breadcrumbs={breadcrumbs}>
             <Head title="Dashboard" />
             <div className="flex h-full flex-1 flex-col gap-4 overflow-x-auto rounded-xl p-4">
-                <div className="grid auto-rows-min gap-4 md:grid-cols-3">
+                <div className="grid auto-rows-min gap-4 md:grid-cols-4">
                     <div className="relative aspect-video overflow-hidden rounded-xl border border-sidebar-border/70 dark:border-sidebar-border">
                         <Link
                             href="/posts"
                             className="flex h-full w-full items-center justify-center rounded-lg bg-[#17a5e0] text-lg font-semibold text-white transition-all hover:bg-[#137fad]"
                         >
                             Posts
+                        </Link>
+                    </div>
+                    <div className="relative aspect-video overflow-hidden rounded-xl border border-sidebar-border/70 dark:border-sidebar-border">
+                        <Link
+                            href="/tasks"
+                            className="flex h-full w-full items-center justify-center rounded-lg bg-[#16db75] text-lg font-semibold text-white transition-all hover:bg-[#0ca857]"
+                        >
+                            Tasks
                         </Link>
                     </div>
                     <div className="relative aspect-video overflow-hidden rounded-xl border border-sidebar-border/70 dark:border-sidebar-border">
